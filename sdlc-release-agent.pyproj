@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>640a0cdd-6434-4c5d-87c5-318b4a00a29b</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>sdlc_release_agent.py</StartupFile>
+    <StartupFile>sdlc_release_agent\__main__.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,7 +21,18 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="sdlc_release_agent.py" />
+    <Compile Include="sdlc_release_agent\__init__.py" />
+    <Compile Include="sdlc_release_agent\__main__.py" />
+    <Compile Include="sdlc_release_agent\agent.py" />
+    <Compile Include="sdlc_release_agent\authorization.py" />
+    <Compile Include="sdlc_release_agent\cli.py" />
+    <Compile Include="tests\test_agent.py" />
+    <Compile Include="tests\test_authorization.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="examples\input.project_read.json" />
+    <Content Include="pyproject.toml" />
+    <Content Include="README.md" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
