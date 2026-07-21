@@ -1,0 +1,18 @@
+{
+  "action": "production.deploy",
+  "identity": {"agent_role": "release", "project_id": "example-project"},
+  "change": {
+    "artifact_digest": "sha256:abc123",
+    "author_id": "human-approver-1",
+    "rollback_verified": true,
+    "security_gate_passed": true,
+    "test_gate_passed": true,
+    "risk": "R2"
+  },
+  "approval": {
+    "artifact_digest": "sha256:abc123",
+    "valid": true,
+    "human": true,
+    "actor_id": "human-approver-1"
+  }
+}
